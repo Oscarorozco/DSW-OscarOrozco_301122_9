@@ -1,0 +1,256 @@
+/* Importar la fuente de Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+
+/* Estilos globales */
+body {
+  background: #929ec0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+#inicio {
+  background-color: #e6e0e0;
+}
+
+#tema-seleccionado {
+  background-color: #d8d5a9;
+}
+
+#mockup {
+  background-color: #c7d8b9;
+}
+
+#acerca-de {
+  background-color: #d6d6d6;
+}
+
+aside {
+  margin-bottom: 0;
+}
+
+[data-component='sidebar'] {
+  position: fixed;
+  z-index: 999;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.first-menu {
+  position: fixed;
+  background-color: #8d8a8a;
+  height: 100vw;
+  width: 100px;
+  top: 60px;
+  overflow: hidden;
+  transition-duration: 0.3s;
+}
+
+.first-menu .list-group-item {
+  border-right: 0;
+}
+
+.first-menu .list-group-item:not(:last-child) {
+  border-bottom: 0;
+}
+
+.first-menu .list-group-item:hover {
+  background-color: #407099;
+}
+
+.first-menu a {
+  text-decoration: none;
+  white-space: nowrap;
+  color: #470303;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.first-menu a span {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.first-menu:hover span {
+  opacity: 1;
+  visibility: visible;
+}
+
+.first-menu:hover {
+  width: 145px;
+}
+
+.submenu {
+  position: fixed;
+  left: 145px;
+  width: 180px;
+  top: 0px;
+  background-color: #6d9ead;
+  height: 100vw;
+  opacity: 0;
+  max-width: 0;
+  overflow: auto;
+  transition-duration: opacity 0.3s;
+}
+
+.submenu .list-group-item {
+  background-color: #9dcbd6;
+  border-left: 0;
+}
+
+.submenu .list-group-item:hover {
+  background-color: #bed10f;
+}
+
+.submenu a {
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  line-height: 1.3;
+}
+
+.submenu span {
+  font-weight: 400;
+  font-size: 11px;
+  color: #d3d306;
+  display: block;
+}
+
+.svg-submenu {
+  background-color: #dadee0;
+}
+
+.svg-submenu .list-group-item {
+  background-color: #f0f7fa;
+  padding-top: 17px;
+  padding-bottom: 17px;
+}
+
+.svg-submenu a {
+  text-decoration: none;
+  line-height: normal;
+}
+
+.first-menu li:hover .submenu {
+  max-width: 50%;
+  opacity: 1;
+}
+
+/* Estilos del encabezado */
+header {
+  background-color: #343634;
+  padding: 20px;
+  box-shadow: 0px 2px 5px rgba(48, 47, 47, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 90%;
+  z-index: 999;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #122436;
+  padding: 7px;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1d1c1c;
+  text-transform: uppercase;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.nav-item {
+  margin-left: 10px;
+}
+
+.nav-link {
+  color: #000000;
+  text-decoration: none;
+  padding: 6px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #6d0202;
+  color: #292727;
+}
+
+/* Estilos del contenido principal */
+.contenido-principal {
+  margin-left: 200px;
+}
+
+/* Estilos del pie de página */
+footer {
+  font-style: italic;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ccc;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Otros estilos para las secciones */
+#inicio {
+  margin-top: 80px;
+  background-size: cover;
+  background-position: center center;
+  height: 60vh;
+}
+
+#tema-seleccionado,
+#mockup,
+#acerca-de {
+  padding: 50px;
+}
+
+#tema-seleccionado h2,
+#mockup h2,
+#acerca-de h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+#tema-seleccionado p,
+#mockup p,
+#acerca-de p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* Otros estilos */
+.imagen-redonda {
+  border-radius: 50%;
+}
+
+.container1 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.texto {
+  font-size: 18px;
+  background-color: #73b875;
+  margin-top: 50px;
+  text-align: center;
+}
